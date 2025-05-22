@@ -1,0 +1,82 @@
+.quality-process {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff;
+
+  &__container {
+    max-width: 1153px;
+    margin: 0 auto;
+    padding: 0 143px;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #333;
+  }
+
+  &__features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  &__item {
+    
+    padding: 2rem;
+    border-radius: 1rem;
+    
+    text-align: center;
+
+    &-title {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    &-text {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #555;
+    }
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &--doc {
+      background-image: url('../images/icons/doc.svg');
+    }
+
+    &--accept {
+      background-image: url('../images/icons/star.svg');
+    }
+
+    &--rules {
+      background-image: url('../images/icons/crown.svg');
+    }
+
+    &--flow {
+      background-image: url('/icons/chart.svg');
+    }
+
+    &--stakeholder {
+      background-image: url('/icons/pie.svg');
+    }
+
+    &--prototype {
+      background-image: url('/icons/prototype.svg');
+    }
+  }
+}

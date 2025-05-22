@@ -1,0 +1,54 @@
+.test-benefits {
+  background: linear-gradient(to bottom right, #ff4a4a, #ff5e62);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  &__feature {
+    background: transparent;
+    padding: 1rem;
+    flex: 1 1 220px;
+    max-width: 250px;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  &__separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    line-height: 1;
+  }
+}

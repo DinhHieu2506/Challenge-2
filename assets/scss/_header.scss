@@ -1,0 +1,117 @@
+.frame {
+  position: relative;
+  width: 1440px;
+  height: 754px;
+  background-image: url(../images/bg-hero.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+
+  &__navbar {
+    @include absolute-position(45px, 584px);
+
+    &-list {
+      display: flex;
+      gap: 40px;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &-item {
+      font-family: $font-manrope;
+      font-weight: 700;
+      color: $color-black;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 20px;
+      white-space: nowrap;
+
+      &--alt {
+        font-family: var(--body-font-family);
+        font-weight: var(--body-font-weight);
+        font-size: var(--body-font-size);
+        letter-spacing: var(--body-letter-spacing);
+        line-height: var(--body-line-height);
+        font-style: var(--body-font-style);
+      }
+    }
+  }
+
+  &__logo {
+    @include absolute-position(35px, 1227px);
+    width: 91px;
+    height: 40px;
+  }
+
+  &__content {
+    @include absolute-position(200px, 122px);
+    width: 669px;
+    height: 406px;
+  }
+
+  &__title {
+    @include absolute-position(0, 0);
+    width: 665px;
+    font-family: $font-manrope;
+    font-weight: 800;
+    color: $color-black;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: 82px;
+  }
+
+  &__description {
+    @include absolute-position(184px, 0);
+    width: 650px;
+    font-family: $font-manrope;
+    font-weight: 400;
+    color: $color-black;
+    font-size: 20px;
+    letter-spacing: 0.20px;
+    line-height: 36px;
+  }
+
+  &__mail-input {
+    @include absolute-position(333px, 0);
+    width: 506px;
+    height: 73px;
+
+    &-container {
+      position: relative;
+      width: 502px;
+      height: 73px;
+      background-color: $color-white;
+      border-radius: 8px;
+    }
+
+    &-placeholder {
+      @include absolute-position(19px, 32px);
+      font-family: $font-manrope;
+      font-weight: 400;
+      color: rgba($color-black, 0.4);
+      font-size: 16px;
+      letter-spacing: 0.20px;
+      line-height: 36px;
+      white-space: nowrap;
+    }
+
+    &-button {
+      @include absolute-position(6px, 360px);
+      width: 136px;
+      height: 61px;
+      background-color: $color-red;
+      border-radius: 8px;
+
+      &-text {
+        @include absolute-position(13px, 37px);
+        font-family: $font-manrope;
+        font-weight: 700;
+        color: $color-white;
+        font-size: 16px;
+        letter-spacing: 0.20px;
+        line-height: 36px;
+        white-space: nowrap;
+      }
+    }
+  }
+}

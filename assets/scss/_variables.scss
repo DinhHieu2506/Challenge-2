@@ -1,0 +1,22 @@
+$primary-color: #f54b4b;
+$font-main: 'Helvetica Neue', sans-serif;
+$text-color: #1e1e1e;
+$bg-color: #ffffff;
+$font-manrope: "Manrope", Helvetica;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-red: #f84646;
+
+:root {
+  --text-gray-100: rgba(244, 245, 247, 1);
+  --text-gray-900: rgba(24, 25, 31, 1);
+  --default-white: rgba(255, 255, 255, 1);
+  --grey-shadow: 0px 30px 40px 0px rgba(212, 217, 232, 0.2);
+}
+
+@mixin absolute-position($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
