@@ -10,8 +10,8 @@
   }
 
   &__title {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 36px;
+    font-weight: 800;
     margin-bottom: 1rem;
   }
 
@@ -20,6 +20,8 @@
     max-width: 800px;
     margin: 0 auto 3rem;
     color: #333;
+    font-size: 24px;
+    font-weight: 400;
   }
 
   &__features {
@@ -49,8 +51,8 @@
   }
 
   &__icon {
-    width: 50px;
-    height: 50px;
+    width: 76px;
+    height: 76px;
     margin: 0 auto;
     background-size: contain;
     background-repeat: no-repeat;
@@ -68,15 +70,57 @@
     }
 
     &--flow {
-      background-image: url('/icons/chart.svg');
+      background-image: url('../images/icons/chart.svg');
     }
 
     &--stakeholder {
-      background-image: url('/icons/pie.svg');
+      background-image: url('../images/icons/pie.svg');
     }
 
     &--prototype {
-      background-image: url('/icons/prototype.svg');
+      background-image: url('../images/icons/figma.svg');
     }
   }
 }
+
+@media (max-width: 768px) {
+  .quality-process {
+    padding: 3rem 1.25rem; // tương đương 20px
+
+    &__container {
+      padding: 0; // bỏ padding ngang 143px để full-width hợp lý trên mobile
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__description {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    &__features {
+      grid-template-columns: 1fr; // 1 cột
+      gap: 2.5rem;
+    }
+
+    &__item {
+      padding: 1rem;
+
+      &-title {
+        font-size: 1.1rem;
+      }
+
+      &-text {
+        font-size: 0.95rem;
+      }
+    }
+
+    &__icon {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
+

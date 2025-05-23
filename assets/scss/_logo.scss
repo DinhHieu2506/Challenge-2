@@ -1,184 +1,184 @@
 .logo-clouds {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 48px;
-  padding: px 165px;
-  position: relative;
-  background-color: var(--text-gray-100);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 59px 165px;
+    top: 3583px;
+    left: 0;
+    background-color: #F4F5F7;
 }
-
-.logo-clouds .section-heading {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: center;
-  gap: 5px;
-  position: relative;
-  flex: 0 0 auto;
+ 
+.section-heading-22 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    position: relative;
+    flex: 0 0 auto;
 }
-
-.logo-clouds .section-title-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
+ 
+.section-title-2 {
+    position: relative;
+    width: 1110px;
+    margin-top: -1.00px;
+    font-family: "Manrope", Sans-serif;
+    font-weight: 800;
+    color: var(#18191F);
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 64px;
 }
-
-.logo-clouds .section-title {
-  position: relative;
-  width: 1110px;
-  margin-top: -1.00px;
-  font-family: "Manrope-ExtraBold", Helvetica;
-  font-weight: 800;
-  color: var(--text-gray-900);
-  font-size: 48px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 64px;
+ 
+.description-2 {
+    position: relative;
+    align-self: stretch;
+    font-family: "Manrope", Sans-serif;
+    font-weight: 500;
+    color: var(#18191F);
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 32px;
 }
-
-.logo-clouds .description {
-  position: relative;
-  align-self: stretch;
-  font-family: "Manrope-Medium", Helvetica;
-  font-weight: 500;
-  color: var(--text-gray-900);
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 32px;
+ 
+.logos {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+    width: 946px;
+    height: 336px;
+    padding-bottom: 59px;
 }
-
-.logo-clouds .logos {
-  display: inline-flex;
-  align-items: center;
-  gap: 24px;
-  position: relative;
-  flex: 0 0 auto;
-  padding: 0 247px;
+ 
+.col {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
 }
-
-.logo-clouds .col {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  position: relative;
-  flex: 0 0 auto;
+ 
+.div-2 {
+    position: relative;
+    width: 170px;
+    height: 96px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 30px 40px 0px rgba(212, 217, 232, 0.2);
 }
-
-.logo-clouds .div {
-  position: relative;
-  width: 170px;
-  height: 96px;
-  background-color: var(--default-white);
-  border-radius: 16px;
-  box-shadow: var(--grey-shadow);
+ 
+.image-2 {
+    width: 134px;
+    height: 67px;
+    top: 15px;
+    left: 18px;
+    position: absolute;
+    object-fit: cover;
 }
-
-.logo-clouds .image {
-  width: 134px;
-  height: 67px;
-  top: 15px;
-  left: 18px;
-  position: absolute;
-  object-fit: cover;
+ 
+.image-3 {
+    width: 122px;
+    height: 61px;
+    top: 18px;
+    left: 24px;
+    position: absolute;
+    object-fit: cover;
 }
-
-.logo-clouds .img {
-  width: 122px;
-  height: 61px;
-  top: 18px;
-  left: 24px;
-  position: absolute;
-  object-fit: cover;
+ 
+.bookmyshow-logo {
+    position: relative;
+    width: 123px;
+    height: 37px;
+    top: 30px;
+    left: 24px;
 }
-
-.logo-clouds .bookmyshow-logo {
-  position: relative;
-  width: 123px;
-  height: 37px;
-  top: 30px;
-  left: 24px;
+ 
+.group-9 {
+    position: absolute;
+    width: 121px;
+    height: 35px;
+    top: 1px;
+    left: 1px;
 }
-
-.logo-clouds .group {
-  position: absolute;
-  width: 121px;
-  height: 35px;
-  top: 1px;
-  left: 1px;
+ 
+.image-4 {
+    position: absolute;
+    width: 132px;
+    height: 66px;
+    top: 15px;
+    left: 19px;
+    object-fit: cover;
 }
-
-.logo-clouds .image-2 {
-  position: absolute;
-  width: 132px;
-  height: 66px;
-  top: 15px;
-  left: 19px;
-  object-fit: cover;
+ 
+.image-5 {
+    position: absolute;
+    width: 132px;
+    height: 66px;
+    top: 15px;
+    left: 19px;
+    object-fit: cover;
 }
-
-.logo-clouds .frame {
-  display: flex;
-  width: 167px;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-  position: relative;
-  top: 22px;
-  left: 2px;
+ 
+.frame-3 {
+    display: flex;
+    width: 167px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    top: 22px;
+    left: 2px;
 }
-
-.logo-clouds .text-wrapper {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: "Manrope-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #f84646;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 32px;
-  white-space: nowrap;
+ 
+.text-wrapper-20 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Manrope", Sans-serif;
+    font-weight: 600;
+    color: #f84646;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 32px;
+    white-space: nowrap;
 }
-
-.logo-clouds .arrow-right {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  background-image: url(./img/arrow-right.png);
-  background-size: 100% 100%;
+ 
+.image-6 {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-size: 100% 100%;
 }
-
-.logo-clouds .image-3 {
-  width: 118px;
-  height: 59px;
-  top: 19px;
-  left: 26px;
-  position: absolute;
-  object-fit: cover;
+ 
+.image-7 {
+    width: 118px;
+    height: 59px;
+    top: 19px;
+    left: 26px;
+    position: absolute;
+    object-fit: cover;
 }
-
-.logo-clouds .OLA-logo {
-  position: relative;
-  width: 98px;
-  height: 34px;
-  top: 31px;
-  left: 36px;
-  background-image: url(./img/image.png);
-  background-size: 100% 100%;
+ 
+.image-8 {
+    position: relative;
+    width: 98px;
+    height: 34px;
+    top: 31px;
+    left: 36px;
+    background-size: 100% 100%;
 }
-
-.logo-clouds .amazon-logo {
-  position: absolute;
-  width: 103px;
-  height: 32px;
-  top: 32px;
-  left: 34px;
+ 
+.image-9 {
+    position: absolute;
+    width: 103px;
+    height: 32px;
+    top: 32px;
+    left: 34px;
 }

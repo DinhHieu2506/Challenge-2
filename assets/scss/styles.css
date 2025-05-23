@@ -5,27 +5,28 @@
   --grey-shadow: 0px 30px 40px 0px rgba(212, 217, 232, 0.2);
 }
 
-.frame {
+.header {
   position: relative;
-  width: 1440px;
   height: 754px;
   background-image: url(../images/bg-hero.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
-.frame__navbar {
+.header__navbar {
   position: absolute;
   top: 45px;
   left: 584px;
+  font-size: 14px;
+  font-weight: 700;
 }
-.frame__navbar-list {
+.header__navbar-list {
   display: flex;
   gap: 40px;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.frame__navbar-item {
+.header__navbar-item {
   font-family: "Manrope", Helvetica;
   font-weight: 700;
   color: #000000;
@@ -34,7 +35,7 @@
   line-height: 20px;
   white-space: nowrap;
 }
-.frame__navbar-item--alt {
+.header__navbar-item--alt {
   font-family: var(--body-font-family);
   font-weight: var(--body-font-weight);
   font-size: var(--body-font-size);
@@ -42,21 +43,21 @@
   line-height: var(--body-line-height);
   font-style: var(--body-font-style);
 }
-.frame__logo {
+.header__logo {
   position: absolute;
   top: 35px;
   left: 1227px;
   width: 91px;
   height: 40px;
 }
-.frame__content {
+.header__content {
   position: absolute;
   top: 200px;
   left: 122px;
   width: 669px;
   height: 406px;
 }
-.frame__title {
+.header__title {
   position: absolute;
   top: 0;
   left: 0;
@@ -68,7 +69,7 @@
   letter-spacing: 0;
   line-height: 82px;
 }
-.frame__description {
+.header__description {
   position: absolute;
   top: 184px;
   left: 0;
@@ -80,21 +81,21 @@
   letter-spacing: 0.2px;
   line-height: 36px;
 }
-.frame__mail-input {
+.header__mail-input {
   position: absolute;
   top: 333px;
   left: 0;
   width: 506px;
   height: 73px;
 }
-.frame__mail-input-container {
+.header__mail-input-container {
   position: relative;
   width: 502px;
   height: 73px;
   background-color: #ffffff;
   border-radius: 8px;
 }
-.frame__mail-input-placeholder {
+.header__mail-input-placeholder {
   position: absolute;
   top: 19px;
   left: 32px;
@@ -106,7 +107,7 @@
   line-height: 36px;
   white-space: nowrap;
 }
-.frame__mail-input-button {
+.header__mail-input-button {
   position: absolute;
   top: 6px;
   left: 360px;
@@ -115,7 +116,7 @@
   background-color: #f84646;
   border-radius: 8px;
 }
-.frame__mail-input-button-text {
+.header__mail-input-button-text {
   position: absolute;
   top: 13px;
   left: 37px;
@@ -199,7 +200,7 @@
 body {
   margin: 0;
   font-family: "Manrope", sans-serif;
-  width: 1440px;
+  width: 100%;
 }
 
 .quality-process {
@@ -213,8 +214,8 @@ body {
   padding: 0 143px;
 }
 .quality-process__title {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 36px;
+  font-weight: 800;
   margin-bottom: 1rem;
 }
 .quality-process__description {
@@ -222,6 +223,8 @@ body {
   max-width: 800px;
   margin: 0 auto 3rem;
   color: #333;
+  font-size: 24px;
+  font-weight: 400;
 }
 .quality-process__features {
   display: grid;
@@ -244,8 +247,8 @@ body {
   color: #555;
 }
 .quality-process__icon {
-  width: 50px;
-  height: 50px;
+  width: 76px;
+  height: 76px;
   margin: 0 auto;
   background-size: contain;
   background-repeat: no-repeat;
@@ -260,15 +263,47 @@ body {
   background-image: url("../images/icons/crown.svg");
 }
 .quality-process__icon--flow {
-  background-image: url("/icons/chart.svg");
+  background-image: url("../images/icons/chart.svg");
 }
 .quality-process__icon--stakeholder {
-  background-image: url("/icons/pie.svg");
+  background-image: url("../images/icons/pie.svg");
 }
 .quality-process__icon--prototype {
-  background-image: url("/icons/prototype.svg");
+  background-image: url("../images/icons/figma.svg");
 }
 
+@media (max-width: 768px) {
+  .quality-process {
+    padding: 3rem 1.25rem;
+  }
+  .quality-process__container {
+    padding: 0;
+  }
+  .quality-process__title {
+    font-size: 2rem;
+  }
+  .quality-process__description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .quality-process__features {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .quality-process__item {
+    padding: 1rem;
+  }
+  .quality-process__item-title {
+    font-size: 1.1rem;
+  }
+  .quality-process__item-text {
+    font-size: 0.95rem;
+  }
+  .quality-process__icon {
+    width: 64px;
+    height: 64px;
+  }
+}
 .test-benefits {
   background: linear-gradient(to bottom right, #ff4a4a, #ff5e62);
   color: #fff;
@@ -313,6 +348,13 @@ body {
 .test-benefits__icon {
   font-size: 2rem;
   line-height: 1;
+  border: 1px #fff solid;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content-section {
@@ -323,9 +365,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 85px;
   margin-bottom: 4rem;
   padding: 0 122px;
+  width: 1200px;
 }
 .content-section__container--reverse {
   flex-direction: row-reverse;
@@ -381,67 +424,60 @@ body {
 .logo-clouds {
   display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 48px;
-  padding: px 165px;
-  position: relative;
-  background-color: var(--text-gray-100);
+  padding: 59px 165px;
+  top: 3583px;
+  left: 0;
+  background-color: #F4F5F7;
 }
 
-.logo-clouds .section-heading {
+.section-heading-22 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  text-align: center;
   gap: 5px;
   position: relative;
   flex: 0 0 auto;
 }
 
-.logo-clouds .section-title-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.logo-clouds .section-title {
+.section-title-2 {
   position: relative;
   width: 1110px;
   margin-top: -1px;
-  font-family: "Manrope-ExtraBold", Helvetica;
+  font-family: "Manrope", Sans-serif;
   font-weight: 800;
-  color: var(--text-gray-900);
+  color: var(#18191F);
   font-size: 48px;
   text-align: center;
   letter-spacing: 0;
   line-height: 64px;
 }
 
-.logo-clouds .description {
+.description-2 {
   position: relative;
   align-self: stretch;
-  font-family: "Manrope-Medium", Helvetica;
+  font-family: "Manrope", Sans-serif;
   font-weight: 500;
-  color: var(--text-gray-900);
+  color: var(#18191F);
   font-size: 18px;
   text-align: center;
   letter-spacing: 0;
   line-height: 32px;
 }
 
-.logo-clouds .logos {
+.logos {
   display: inline-flex;
   align-items: center;
   gap: 24px;
   position: relative;
   flex: 0 0 auto;
-  padding: 0 247px;
+  width: 946px;
+  height: 336px;
+  padding-bottom: 59px;
 }
 
-.logo-clouds .col {
+.col {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -450,16 +486,16 @@ body {
   flex: 0 0 auto;
 }
 
-.logo-clouds .div {
+.div-2 {
   position: relative;
   width: 170px;
   height: 96px;
-  background-color: var(--default-white);
+  background-color: #ffffff;
   border-radius: 16px;
-  box-shadow: var(--grey-shadow);
+  box-shadow: 0px 30px 40px 0px rgba(212, 217, 232, 0.2);
 }
 
-.logo-clouds .image {
+.image-2 {
   width: 134px;
   height: 67px;
   top: 15px;
@@ -469,7 +505,7 @@ body {
      object-fit: cover;
 }
 
-.logo-clouds .img {
+.image-3 {
   width: 122px;
   height: 61px;
   top: 18px;
@@ -479,7 +515,7 @@ body {
      object-fit: cover;
 }
 
-.logo-clouds .bookmyshow-logo {
+.bookmyshow-logo {
   position: relative;
   width: 123px;
   height: 37px;
@@ -487,7 +523,7 @@ body {
   left: 24px;
 }
 
-.logo-clouds .group {
+.group-9 {
   position: absolute;
   width: 121px;
   height: 35px;
@@ -495,7 +531,7 @@ body {
   left: 1px;
 }
 
-.logo-clouds .image-2 {
+.image-4 {
   position: absolute;
   width: 132px;
   height: 66px;
@@ -505,7 +541,17 @@ body {
      object-fit: cover;
 }
 
-.logo-clouds .frame {
+.image-5 {
+  position: absolute;
+  width: 132px;
+  height: 66px;
+  top: 15px;
+  left: 19px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.frame-3 {
   display: flex;
   width: 167px;
   align-items: center;
@@ -517,12 +563,12 @@ body {
   left: 2px;
 }
 
-.logo-clouds .text-wrapper {
+.text-wrapper-20 {
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Manrope-SemiBold", Helvetica;
+  font-family: "Manrope", Sans-serif;
   font-weight: 600;
   color: #f84646;
   font-size: 16px;
@@ -532,15 +578,14 @@ body {
   white-space: nowrap;
 }
 
-.logo-clouds .arrow-right {
+.image-6 {
   position: relative;
   width: 16px;
   height: 16px;
-  background-image: url(./img/arrow-right.png);
   background-size: 100% 100%;
 }
 
-.logo-clouds .image-3 {
+.image-7 {
   width: 118px;
   height: 59px;
   top: 19px;
@@ -550,27 +595,21 @@ body {
      object-fit: cover;
 }
 
-.logo-clouds .OLA-logo {
+.image-8 {
   position: relative;
   width: 98px;
   height: 34px;
   top: 31px;
   left: 36px;
-  background-image: url(./img/image.png);
   background-size: 100% 100%;
 }
 
-.logo-clouds .amazon-logo {
+.image-9 {
   position: absolute;
   width: 103px;
   height: 32px;
   top: 32px;
   left: 34px;
-}
-
-.box {
-  width: 1440px;
-  height: 536px;
 }
 
 .box .footer {
@@ -714,4 +753,45 @@ body {
   letter-spacing: 0;
   line-height: 32px;
   white-space: nowrap;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  font-family: "Manrope", sans-serif;
+}
+.cta__icon {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+.cta__icon img {
+  width: 100%;
+  height: auto;
+}
+.cta__title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+.cta__text {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #000;
+}
+.cta__button {
+  background-color: #ff4d4f;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+.cta__button:hover {
+  background-color: #ff1a1d;
 }/*# sourceMappingURL=styles.css.map */
