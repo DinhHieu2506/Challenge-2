@@ -1,46 +1,48 @@
 .content-section {
-
   color: black;
-  padding: 4rem 2rem;
+  padding: 4rem 122px; 
 
   &__container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: space-between;
     gap: 85px;
     margin-bottom: 4rem;
-    padding: 0 122px;
-    width: 1200px;
-
+    max-width: 1200px; 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; 
 
     &--reverse {
       flex-direction: row-reverse;
-      padding: 160px 122px;
+      padding: 160px 0; 
     }
 
     @media (max-width: 768px) {
       flex-direction: column;
       text-align: center;
+      padding: 0; 
     }
   }
-
   &__text {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__title {
-    font-size: 2.5rem;
+    font-size: 64px;
     font-weight: 700;
     margin-bottom: 1rem;
-    font-size: 64px;
+    align-self: flex-start;
   }
 
   &__description {
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    font-size: 16px;
-    font-weight: 400;
     color: #808080;
   }
 
@@ -54,6 +56,7 @@
     font-weight: 600;
     text-decoration: none;
     transition: background 0.3s ease;
+    align-self: flex-start; // button nằm ngang đáy
 
     &:hover {
       background-color: #e63b3b;
@@ -62,7 +65,11 @@
 
   &__image {
     flex: 1;
+    display: flex;
+    align-items: center;
+
     img {
+      width: 100%;
       height: auto;
       border-radius: 10px;
       object-fit: cover;

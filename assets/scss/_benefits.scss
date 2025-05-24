@@ -1,12 +1,27 @@
 .test-benefits {
+  position: relative;
   background: linear-gradient(to bottom right, #ff4a4a, #ff5e62);
   color: #fff;
   padding: 4rem 2rem;
   text-align: center;
+  overflow: hidden;
+
+ 
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../images/image\ 1.png')  no-repeat center center;
+    background-size: cover;
+    opacity: 0.2; 
+    z-index: 0;
+  }
 
   &__container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1; 
   }
 
   &__title {
@@ -25,7 +40,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-   
   }
 
   &__feature {
@@ -48,14 +62,52 @@
   }
 
   &__icon {
+    width: 32px; 
+    height: 32px;
     font-size: 2rem;
     line-height: 1;
-    border: 1px #fff solid ;
-    width: 32px;
-    height: 32px;
     border-radius: 50%;
     display: flex;
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .test-benefits {
+    padding: 2rem 1rem;
+  }
+
+  .test-benefits__title {
+    font-size: 2rem;
+  }
+
+  .test-benefits__subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .test-benefits__text {
+    font-size: 1rem;
+  }
+
+  .test-benefits__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Adds space between text and icon */
+  }
+
+  .test-benefits__separator {
+    margin-top: 0.5rem; /* Ensures the separator (containing the icon) is below the text */
+  }
+
+  .test-benefits__icon {
+    font-size: 1.5rem;
+    width: 24px;
+    height: 24px;
+    transform: rotate(90deg); /* Keeps the arrow pointing downward */
+    transition: transform 0.3s ease;
   }
 }

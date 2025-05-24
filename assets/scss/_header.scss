@@ -46,6 +46,15 @@
     height: 40px;
   }
 
+  &__menu-toggle {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url('../images/icons/hamburger.svg') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+}
+
   &__content {
     @include absolute-position(200px, 122px);
     width: 669px;
@@ -114,6 +123,94 @@
         letter-spacing: 0.20px;
         line-height: 36px;
         white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding: 20px;
+
+    &__navbar {
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+
+      &-list {
+        display: none; 
+      }
+    }
+
+    &__logo {
+      position: static;
+      width: 80px;
+      height: auto;
+    }
+
+    &__content {
+      position: static;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    &__title {
+      position: static;
+      font-size: 28px;
+      line-height: 1.4;
+      width: 100%;
+    }
+
+    &__description {
+      position: static;
+      font-size: 14px;
+      line-height: 1.6;
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    &__mail-input {
+      position: static;
+      width: 100%;
+      margin-top: 24px;
+
+      &-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      &-placeholder {
+        position: static;
+        flex: 1;
+        padding: 12px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.4);
+      }
+
+      &-button {
+        position: static;
+        width: auto;
+        background-color: $color-red;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-text {
+          position: static;
+          font-size: 14px;
+          color: $color-white;
+          font-weight: 700;
+        }
       }
     }
   }
