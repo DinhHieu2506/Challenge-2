@@ -279,6 +279,7 @@
 .wrapper {
   max-width: 1440px;
   margin: 0;
+  width: 100%;
 }
 
 body {
