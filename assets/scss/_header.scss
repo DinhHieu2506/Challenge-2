@@ -4,6 +4,7 @@
   background-image: url(../images/bg-hero.jpg);
   background-size: cover;
   background-position: 50% 50%;
+  width: 100%;
 
   &__navbar {
     @include absolute-position(45px, 584px);
@@ -81,13 +82,14 @@
     font-size: 20px;
     letter-spacing: 0.20px;
     line-height: 36px;
+    
   }
 
   &__mail-input {
     @include absolute-position(333px, 0);
     width: 506px;
     height: 73px;
-
+    
     &-container {
       position: relative;
       width: 502px;

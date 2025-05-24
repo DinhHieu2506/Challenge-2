@@ -85,10 +85,10 @@
 
 @media (max-width: 768px) {
   .quality-process {
-    padding: 3rem 1.25rem; // tương đương 20px
+    padding: 3rem 20px; 
 
     &__container {
-      padding: 0; // bỏ padding ngang 143px để full-width hợp lý trên mobile
+      padding: 0; 
     }
 
     &__title {

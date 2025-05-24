@@ -3,15 +3,16 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 160px 397px;
   font-family: $font-family;
 
   &__icon {
     width: 120px;
     height: 120px;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto; // căn giữa icon
 
     img {
+      display: block;         // xoá khoảng trống dư thừa nếu là inline
       width: 100%;
       height: auto;
     }
