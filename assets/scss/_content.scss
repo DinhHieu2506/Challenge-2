@@ -57,6 +57,7 @@
     text-decoration: none;
     transition: background 0.3s ease;
     align-self: flex-start; 
+    
 
     &:hover {
       background-color: #e63b3b;
@@ -67,6 +68,16 @@
     flex: 1;
     display: flex;
     align-items: center;
+
+    .desktop-img {
+      display: block;
+    }
+
+    .mobile-img {
+      display: none;
+    }
+
+    
 
     img {
       width: 100%;
@@ -107,10 +118,21 @@
 
     &__button {
       align-self: center; 
+      width: 338px;
     }
 
     &__image {
       margin-bottom: 1.5rem;
+
+    .desktop-img {
+      display: none;
+    }
+
+    .mobile-img {
+      display: block;
+    }
+
+     
     }
    
   }

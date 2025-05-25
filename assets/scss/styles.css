@@ -540,6 +540,12 @@ body {
   display: flex;
   align-items: center;
 }
+.content-section__image .desktop-img {
+  display: block;
+}
+.content-section__image .mobile-img {
+  display: none;
+}
 .content-section__image img {
   width: 100%;
   height: auto;
@@ -573,9 +579,16 @@ body {
   }
   .content-section__button {
     align-self: center;
+    width: 338px;
   }
   .content-section__image {
     margin-bottom: 1.5rem;
+  }
+  .content-section__image .desktop-img {
+    display: none;
+  }
+  .content-section__image .mobile-img {
+    display: block;
   }
 }
 .logo-clouds {
