@@ -7,7 +7,7 @@
   &__container {
     max-width: 1153px;
     margin: 0 auto;
-    padding: 120px 143px;
+    padding: 3rem 2rem;
   }
 
   &__title {
@@ -18,7 +18,7 @@
 
   &__description {
     font-size: 1.1rem;
-    max-width: 800px;
+    max-width: 994px;
     margin: 0 auto 3rem;
     color: #333;
     font-size: 24px;
@@ -27,16 +27,17 @@
 
   &__features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap:  96px 107px;
   }
 
   &__item {
-    
-    padding: 2rem;
+    max-width: 320px;
+    letter-spacing: 0.2px;
     border-radius: 1rem;
-    
     text-align: center;
+    display: flex;
+    flex-direction: column;
 
     &-title {
       margin-top: 1rem;

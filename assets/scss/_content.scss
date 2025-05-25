@@ -1,6 +1,6 @@
 .content-section {
   color: black;
-  padding: 4rem 122px; 
+  padding: 160px 122px; 
 
   &__container {
     display: flex;
@@ -14,9 +14,11 @@
     margin-right: auto;
     padding: 0; 
 
+    
+
     &--reverse {
       flex-direction: row-reverse;
-      padding: 160px 0; 
+      
     }
 
     @media (max-width: 768px) {
@@ -41,7 +43,7 @@
 
   &__description {
     font-size: 16px;
-    line-height: 32p;
+    line-height: 32px;
     font-weight: 400;
     margin-bottom: 1.5rem;
     color: #808080;
@@ -100,12 +102,12 @@
       text-align: center;
       gap: 2rem;
       padding: 0;
-      width: 388px;
+      width: 338px;
     }
 
     &__container--reverse {
       flex-direction: column;
-      padding: 0  ; 
+      padding: 0; 
     }
 
     &__title {
