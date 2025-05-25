@@ -49,8 +49,8 @@
   }
 
   &__text {
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 1.5;
   }
 
@@ -67,9 +67,9 @@
     transform: rotate(0deg);
   }
 
-  // Responsive mobile
+  
   @media (max-width: 768px) {
-    padding: 2rem 20px;
+    padding: 0 20px;
     width: 100%;
    
 

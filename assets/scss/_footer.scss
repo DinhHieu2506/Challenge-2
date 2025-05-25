@@ -21,6 +21,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    
   }
 
   &__item {
@@ -56,8 +57,9 @@
   }
 
   @media (max-width: 768px) {
-  padding: 40px 20px;
 
+    padding: 0 20px;
+  
   &__container {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -71,7 +73,7 @@
 }
 
 @media (max-width: 480px) {
-  padding: 30px 16px;
+  
 
   &__container {
     grid-template-columns: 1fr;

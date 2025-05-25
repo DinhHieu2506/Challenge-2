@@ -10,6 +10,30 @@
     @include absolute-position(45px, 584px);
     font-size: 14px;
     font-weight: 700;
+
+    &-mobile {
+      display: none;
+
+      // .header__menu-tonggle {
+      //   background: none;
+      //   font-size: 1.5rem;
+      //   border: none;
+      //   cursor: pointer;
+      // }
+       .header__nav-btn {
+                background: #f44336;
+                color: #fff;
+                padding: 0.4rem 1rem;
+                border-radius: 5px;
+                text-decoration: none;
+                margin-left: 1rem;
+            }
+             @media (max-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+    }
   
 
     &-list {
@@ -148,6 +172,7 @@
     }
 
     &__logo {
+      display: none;
       position: static;
       width: 80px;
       height: auto;

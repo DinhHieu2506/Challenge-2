@@ -38,6 +38,7 @@
     font-size: 48px;
     text-align: center;
     line-height: 64px;
+    padding-top : 59px;
   }
 
   &__description {
@@ -134,9 +135,9 @@
   }
 
   @media (max-width: 768px) {
-    padding: 40px ;
+    padding: 0 20px;
     gap: 32px;
-    width: 375px;
+    width: 100%;
 
     &__section-heading {
       align-items: center;

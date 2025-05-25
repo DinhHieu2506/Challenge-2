@@ -20,6 +20,24 @@
   font-size: 14px;
   font-weight: 700;
 }
+.header__navbar-mobile {
+  display: none;
+}
+.header__navbar-mobile .header__nav-btn {
+  background: #f44336;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+@media (max-width: 768px) {
+  .header__navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
 .header__navbar-list {
   display: flex;
   gap: 40px;
@@ -154,6 +172,7 @@
     display: none;
   }
   .header__logo {
+    display: none;
     position: static;
     width: 80px;
     height: auto;
@@ -233,7 +252,7 @@ body {
 .quality-process__container {
   max-width: 1153px;
   margin: 0 auto;
-  padding: 0 143px;
+  padding: 120px 143px;
 }
 .quality-process__title {
   font-size: 36px;
@@ -265,8 +284,10 @@ body {
 }
 .quality-process__item-text {
   margin-top: 0.5rem;
-  font-size: 0.95rem;
+  font-size: 18px;
   color: #555;
+  font-weight: 400;
+  line-height: 28px;
 }
 .quality-process__icon {
   width: 76px;
@@ -371,8 +392,8 @@ body {
   max-width: 250px;
 }
 .test-benefits__text {
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 1.5;
 }
 .test-benefits__separator {
@@ -388,7 +409,7 @@ body {
 }
 @media (max-width: 768px) {
   .test-benefits {
-    padding: 2rem 20px;
+    padding: 0 20px;
     width: 100%;
   }
   .test-benefits__title {
@@ -453,7 +474,8 @@ body {
 }
 .content-section__description {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 32p;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   color: #808080;
 }
@@ -493,7 +515,7 @@ body {
 
 @media (max-width: 768px) {
   .content-section {
-    padding: 2rem;
+    padding: 90px 20px;
   }
   .content-section__container {
     flex-direction: column;
@@ -526,6 +548,7 @@ body {
   }
   .content-section__image .mobile-img {
     display: block;
+    width: 100%;
   }
 }
 .logo-clouds {
@@ -564,6 +587,7 @@ body {
   font-size: 48px;
   text-align: center;
   line-height: 64px;
+  padding-top: 59px;
 }
 .logo-clouds__description {
   position: relative;
@@ -688,9 +712,9 @@ body {
 }
 @media (max-width: 768px) {
   .logo-clouds {
-    padding: 40px;
+    padding: 0 20px;
     gap: 32px;
-    width: 375px;
+    width: 100%;
   }
   .logo-clouds__section-heading {
     align-items: center;
@@ -815,7 +839,7 @@ body {
 }
 @media (max-width: 768px) {
   .footer {
-    padding: 40px 20px;
+    padding: 0 20px;
   }
   .footer__container {
     grid-template-columns: 1fr 1fr;
@@ -828,9 +852,6 @@ body {
   }
 }
 @media (max-width: 480px) {
-  .footer {
-    padding: 30px 16px;
-  }
   .footer__container {
     grid-template-columns: 1fr;
     gap: 20px;
