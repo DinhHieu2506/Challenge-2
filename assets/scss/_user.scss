@@ -28,7 +28,8 @@
   }
 
   &__text {
-    font-size: 1.125rem;
+    font-size: 18px;
+    font-weight: 500;
     margin-bottom: 2rem;
     color: $text-color;
   }
@@ -36,7 +37,7 @@
   &__button {
     background-color: $primary-color;
     color: #fff;
-    padding: 0.75rem 2rem;
+    padding: 25px 40px;
     text-decoration: none;
     font-size: 1rem;
     border-radius: 6px;

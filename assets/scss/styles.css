@@ -295,13 +295,13 @@ body {
 }
 .quality-process__item-title {
   margin-top: 1rem;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 800;
 }
 .quality-process__item-text {
   margin-top: 0.5rem;
   font-size: 18px;
-  color: #555;
+  color: #000000;
   font-weight: 400;
   line-height: 28px;
 }
@@ -336,7 +336,7 @@ body {
     padding: 3rem 20px;
   }
   .quality-process__container {
-    padding: 0;
+    padding: 0 18px;
   }
   .quality-process__title {
     font-size: 2rem;
@@ -357,6 +357,7 @@ body {
   }
   .quality-process__item-text {
     font-size: 0.95rem;
+    letter-spacing: 0.2;
   }
   .quality-process__icon {
     width: 64px;
@@ -759,7 +760,6 @@ body {
     gap: 16px;
   }
   .logo-clouds__logo-box {
-    width: 100%;
     max-width: 250px;
     height: auto;
     padding: 20px;
@@ -773,6 +773,12 @@ body {
     height: auto;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .logo-clouds__image--6, .logo-clouds__group--bookmyshow--6 {
+    width: 103px;
+    height: 32px;
+    top: 40px;
+    left: 30px;
   }
   .logo-clouds__bookmyshow-logo, .logo-clouds__frame, .logo-clouds__icon {
     position: static;
@@ -910,14 +916,15 @@ body {
   color: #000;
 }
 .cta__text {
-  font-size: 1.125rem;
+  font-size: 18px;
+  font-weight: 500;
   margin-bottom: 2rem;
   color: #000;
 }
 .cta__button {
   background-color: #ff4d4f;
   color: #fff;
-  padding: 0.75rem 2rem;
+  padding: 25px 40px;
   text-decoration: none;
   font-size: 1rem;
   border-radius: 6px;

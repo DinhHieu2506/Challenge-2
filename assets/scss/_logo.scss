@@ -168,7 +168,6 @@
     }
 
     &__logo-box {
-      width: 100%;
       max-width: 250px;
       height: auto;
       padding: 20px;
@@ -183,6 +182,9 @@
       width: 100%;
       height: auto;
       object-fit: contain;
+
+      &--6 {width: 103px; height: 32px; top: 40px; left: 30px;}
+
     }
 
     &__bookmyshow-logo,
